@@ -41,7 +41,7 @@ for i in range(0, days_between(FIRST_DAY, BOOKING_DAY)):
     slot_710 = slot_710 + DAILY_INCREASE
 
 temp = slot_710
-pyautogui.PAUSE = 4
+pyautogui.PAUSE = 4.0
 for user in logins:
     webbrowser.open(BOOKING_URL + str(temp) + "&room_id=213")
     pyautogui.press('tab')
