@@ -28,7 +28,7 @@ DAILY_INCREASE = 86400
 
 #Slot of first booking day.
 
-slot710 = 0
+slot_710 = 0
 FIRST_DAY = "2017-05-17"
 
 #Day of booking (3 weeks from current date).
@@ -38,9 +38,9 @@ BOOKING_DAY = (datetime.today() + timedelta(days=21)).strftime("%Y-%m-%d")
 #Add daily increase to slot days_between times
 
 for i in range(0, days_between(FIRST_DAY, BOOKING_DAY)):
-    slot710 = slot710 + DAILY_INCREASE
+    slot_710 = slot_710 + DAILY_INCREASE
 
-temp = slot710
+temp = slot_710
 pyautogui.PAUSE = 4
 for user in logins:
     webbrowser.open(BOOKING_URL + str(temp) + "&room_id=213")
