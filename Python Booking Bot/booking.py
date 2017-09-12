@@ -11,7 +11,7 @@ def days_between(day1, day2):
     day2 = datetime.strptime(day2, "%Y-%m-%d")
     return abs((day2 - day1).days)
 
-logins = {}
+logins = {'user1', 'pass1', 'user2', 'pass2'}
 
 BOOKING_URL = "http://apps.library.ryerson.ca/room_booking/booking/book_room?slot="
 
